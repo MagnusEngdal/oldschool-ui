@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #adadad;
+  background: #000;
+  font-family: "VT323", monospace;
+  font-size: 23px;
+  line-height: 0.85em;
+}
+
+.dos-row {
+  display: grid;
+  grid-template-columns: repeat(24, 1fr);
+}
+
+.dos-col {
+  grid-column: span 24;
+}
+
+.dos-col-8 {
+  grid-column: span 8;
+}
+
+.dos-col-12 {
+  grid-column: span 12;
+}
+
+.dos-bg--blue {
+  background-color: #0302ae;
+}
+
+.dos-bg--turq {
+  background-color: #07a9ad;
+}
+
+.dos-fg--blue {
+  color: #0302ae;
+}
+
+.dos-fg--turq {
+  color: #07a9ad;
+}
+
+.dos-fg--turq-light {
+  color: #50ffff;
+}
+
+.dos-bc--turq-light {
+  border-color: #50ffff;
+}
+
+/* window */
+
+.dos-window {
+  position: relative;
+}
+
+.dos-window-title {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.dos-window-title--inner {
+  padding: 0 8px;
+  text-transform: uppercase;
+}
+
+/* explorer */
+
+.dos-explorer {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dos-explorer li {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+}
+
+.dos-explorer li > .dos-explorer-col {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.dos-explorer li > .dos-explorer-col:not(:first-of-type) {
+  text-align: right;
+  padding-right: 0px;
+}
+
+.dos-explorer li > .dos-explorer-col:not(:last-of-type) {
+  border-right-width: 2px;
+  border-right-style: solid;
+  margin-right: 4px;
+  padding-right: 4px;
+}
+
+/* border */
+
+.dos-border {
+  display: flex;
+  padding: 8px 3px;
+  align-items: stretch;
+}
+
+.dos-border--inner {
+  flex: 1;
+  border-top-width: 1px;
+  border-left-width: 2px;
+  border-bottom-width: 1px;
+  border-right-width: 2px;
+  border-top-style: solid;
+  border-left-style: solid;
+  border-bottom-style: solid;
+  border-right-style: solid;
+  padding: 2px;
+}
+
+.dos-border--inner > .dos-border--inner {
+  padding: 8px 3px;
+}

@@ -1,0 +1,13 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "npm run build --workspace=oldschool-ui",
+    "watch": "npm run watch --workspace=oldschool-ui",
+    "pub": "npm publish --access=public --workspace=oldschool-ui",
+    "ver": "npm version patch --workspace=oldschool-ui"
+  },
+  "workspaces": [
+    "packages/*",
+    "examples/*"
+  ]
+}
