@@ -1,5 +1,6 @@
 {
   "private": true,
+  "description": "Old-school component library for React",
   "scripts": {
     "build": "npm run build --workspace=oldschool-ui",
     "watch": "npm run watch --workspace=oldschool-ui",
