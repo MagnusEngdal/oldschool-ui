@@ -10,6 +10,14 @@ body {
   line-height: 0.85em;
 }
 
+.osui-shadow--small {
+  box-shadow: 7px 8px 0px rgba(0, 0, 0, 0.8);
+}
+
+.osui-shadow--big {
+  box-shadow: 14px 16px 0px rgba(0, 0, 0, 0.8);
+}
+
 .dos-col {
   grid-column: span 24;
 }

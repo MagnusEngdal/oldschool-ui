@@ -1,5 +1,9 @@
 /* background */
 
+.osui-c-bg-white {
+  background-color: #fff;
+}
+
 .osui-c-bg-gray {
   background-color: #aaaaaa;
 }

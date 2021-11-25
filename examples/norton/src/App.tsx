@@ -6,6 +6,7 @@ import {
   Modal,
   Option,
   OptionCol,
+  Button,
 } from "oldschool-ui";
 import data, { DataType } from "./data";
 
@@ -17,7 +18,10 @@ function App() {
 
   return (
     <>
-      <Modal>Hej</Modal>
+      <Modal>
+        <div>Hello world</div>
+        <Button>Ok</Button>
+      </Modal>
       <Row>
         <Col span={12}>
           <Window title="Winterspire">
@@ -35,7 +39,7 @@ function App() {
         <Col span={12}>
           <Window title="Winterspire">
             <Explorer>
-              {files.map((item) => (
+              {files.slice(0, 15).map((item) => (
                 <Option>
                   <OptionCol>{item.name}</OptionCol>
                   <OptionCol>{item.size}</OptionCol>
