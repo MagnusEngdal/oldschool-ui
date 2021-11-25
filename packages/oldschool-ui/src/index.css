@@ -10,11 +10,6 @@ body {
   line-height: 0.85em;
 }
 
-.dos-row {
-  display: grid;
-  grid-template-columns: repeat(24, 1fr);
-}
-
 .dos-col {
   grid-column: span 24;
 }
